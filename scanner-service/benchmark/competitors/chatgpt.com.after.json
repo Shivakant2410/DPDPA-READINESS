@@ -1,0 +1,445 @@
+{
+ "target": "https://chatgpt.com",
+ "finalUrl": "https://chatgpt.com/",
+ "siteDomain": "chatgpt.com",
+ "scannedAt": "2026-09-25T17:55:36.839Z",
+ "durationMs": 33535,
+ "engine": {
+  "browser": "chromium",
+  "version": "153.0.8010.12",
+  "method": "playwright-consent-journey-v1"
+ },
+ "http": {
+  "status": 200,
+  "https": true,
+  "securityHeaders": {
+   "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+   "content-security-policy": "base-uri 'none'; object-src 'none'; frame-ancestors 'self'",
+   "x-content-type-options": "nosniff",
+   "referrer-policy": "strict-origin-when-cross-origin",
+   "permissions-policy": null
+  }
+ },
+ "banner": null,
+ "privacyLinks": [
+  {
+   "text": "Privacy Policy",
+   "href": "https://openai.com/privacy",
+   "inFooter": false,
+   "strength": "strong"
+  }
+ ],
+ "cookiePolicyLinks": [],
+ "scrollConsent": null,
+ "browseError": null,
+ "notice": {
+  "url": "https://openai.com/en-GB/policies/privacy-policy/",
+  "status": 200,
+  "words": 3612,
+  "language": "en"
+ },
+ "phases": {
+  "preConsent": {
+   "requestCount": 165,
+   "thirdPartyHosts": [
+    "accounts.google.com"
+   ],
+   "trackers": [],
+   "cookies": [
+    {
+     "name": "__cf_bm",
+     "domain": ".chatgpt.com",
+     "thirdParty": false,
+     "vendor": "Cloudflare",
+     "category": "essential",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 0
+    },
+    {
+     "name": "__cflb",
+     "domain": "chatgpt.com",
+     "thirdParty": false,
+     "vendor": "Cloudflare",
+     "category": "essential",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 0
+    },
+    {
+     "name": "_cfuvid",
+     "domain": ".chatgpt.com",
+     "thirdParty": false,
+     "vendor": "Cloudflare",
+     "category": "essential",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": "session"
+    },
+    {
+     "name": "g_state",
+     "domain": "chatgpt.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": false,
+     "sameSite": "Lax",
+     "expiresInDays": 180
+    },
+    {
+     "name": "oai-did",
+     "domain": ".chatgpt.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "Lax",
+     "expiresInDays": 365
+    },
+    {
+     "name": "oai-mweb-origin",
+     "domain": ".chatgpt.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "Lax",
+     "expiresInDays": "session"
+    },
+    {
+     "name": "oai-mweb-route-desktop",
+     "domain": ".chatgpt.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "Lax",
+     "expiresInDays": 7
+    },
+    {
+     "name": "oai-sc",
+     "domain": ".chatgpt.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 365
+    }
+   ]
+  },
+  "afterReject": null,
+  "afterAccept": null
+ },
+ "checks": [
+  {
+   "confidence": "high",
+   "evidence": [],
+   "id": "pre-consent-tracking",
+   "controlId": "DPDP-CONSENT-002",
+   "area": "Consent & cookies",
+   "title": "No non-essential tracking before consent",
+   "severity": "High",
+   "status": "pass",
+   "detail": "No known advertising, analytics, session-replay or marketing trackers fired, and no such cookies were set, before a consent choice.",
+   "legal": "DPDP Act 2023, s.6(1): consent must be free, specific, informed, unconditional and unambiguous, given by a clear affirmative action; s.4: processing needs consent or a legitimate use.",
+   "fix": "Load these tags only after an affirmative \"Accept\". In Google Tag Manager, add a consent-based trigger (or Consent Mode with default \"denied\") to each listed tag; for hard-coded pixels, move them behind your consent platform's callback.",
+   "verify": "Open the site in a private window, do not touch the banner, and check DevTools > Network and Application > Cookies for the listed vendors."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "No known consent platform or cookie/consent overlay was found in any frame after waiting for the page to settle."
+   ],
+   "id": "consent-banner",
+   "controlId": "DPDP-CONSENT-001",
+   "area": "Consent & cookies",
+   "title": "Consent banner shown to first-time visitors",
+   "severity": "High",
+   "status": "pass",
+   "detail": "No consent banner was found, and no non-essential tracking was observed, so a cookie banner may not be required.",
+   "legal": "DPDP Act 2023, s.5: a notice must accompany or precede every request for consent.",
+   "fix": "Show a consent notice on first visit that names the purposes and offers Accept and Reject with equal prominence.",
+   "verify": "Open the site in a private window and confirm the banner appears before any interaction."
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "\"Privacy Policy\" -> https://openai.com/privacy (strong)"
+   ],
+   "id": "privacy-link",
+   "controlId": "DPDP-NOTICE-001",
+   "area": "Privacy notice",
+   "title": "Privacy notice linked from the homepage",
+   "severity": "High",
+   "status": "pass",
+   "detail": "A privacy notice link was found on the rendered homepage. Its content is not yet analysed.",
+   "legal": "DPDP Act 2023, s.5: a notice must accompany or precede every request for consent.",
+   "fix": "Link the privacy notice from the site footer and from every form that collects personal data.",
+   "verify": "Check the footer and forms for a visible privacy notice link."
+  },
+  {
+   "confidence": "high",
+   "evidence": [],
+   "id": "https",
+   "controlId": "DPDP-SECURITY-001",
+   "area": "Governance & security",
+   "title": "Site served over HTTPS",
+   "severity": "High",
+   "status": "pass",
+   "detail": "Final URL uses HTTPS: https://chatgpt.com/",
+   "legal": "DPDP Act 2023, s.8(5): reasonable security safeguards to prevent personal data breach.",
+   "fix": "Serve every page over HTTPS and redirect HTTP to HTTPS.",
+   "verify": "Visit the http:// address and confirm it redirects to https://."
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "strict-transport-security: max-age=31536000; includeSubDomains; preload",
+    "content-security-policy: base-uri 'none'; object-src 'none'; frame-ancestors 'self'",
+    "x-content-type-options: nosniff",
+    "referrer-policy: strict-origin-when-cross-origin",
+    "permissions-policy: (missing)"
+   ],
+   "id": "security-headers",
+   "controlId": "DPDP-SECURITY-002",
+   "area": "Governance & security",
+   "title": "Security response headers present",
+   "severity": "Low",
+   "status": "fail",
+   "detail": "Missing on the homepage response: permissions-policy.",
+   "legal": "DPDP Act 2023, s.8(5): reasonable security safeguards to prevent personal data breach. Headers are a hygiene indicator, not an explicit statutory requirement.",
+   "fix": "Add the missing headers at your CDN or web server.",
+   "verify": "Inspect the homepage response headers in DevTools > Network."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Data categories named: name, email, phone, postal address, date of birth, IP address, device information, location, payment details, cookies and usage data",
+    "Purpose: \"For information about how we collect and use training information to develop our language models that power ChatGPT and other Services, and your choices with respect to that information, please see this policy as well as this help center article⁠(opens in a ne…\"",
+    "Read from https://openai.com/en-GB/policies/privacy-policy/ (3612 words)"
+   ],
+   "id": "notice-data-purpose",
+   "controlId": "DPDP-NOTICE-002",
+   "area": "Privacy notice",
+   "severity": "High",
+   "status": "pass",
+   "title": "Notice lists the personal data and why it is used",
+   "detail": "The notice names 10 categories of personal data and explains what they are used for.",
+   "legal": "DPDP Act 2023, s.5(1): the notice must describe the personal data and the purpose of processing, how to exercise the rights under s.6(4) and s.13, and how to complain to the Board.",
+   "fix": "List each item of personal data you collect (for example name, email, phone, IP address) next to the specific purpose it is used for.",
+   "verify": "Read the notice as a visitor: can you tell what data is collected and why, item by item?"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "\"Withdraw your consent—where we rely on consent as the legal basis for processing.\"",
+    "Read from https://openai.com/en-GB/policies/privacy-policy/ (3612 words)"
+   ],
+   "id": "notice-withdrawal",
+   "controlId": "DPDP-NOTICE-003",
+   "area": "Privacy notice",
+   "severity": "High",
+   "status": "pass",
+   "title": "Notice explains how to withdraw consent",
+   "detail": "The notice explains that consent can be withdrawn.",
+   "legal": "DPDP Act 2023, s.5(1)(ii) and s.6(4): the notice must explain how to withdraw consent, and withdrawing must be as easy as giving consent.",
+   "fix": "State that consent can be withdrawn at any time, and give the exact way to do it (for example a link, settings page, or email address).",
+   "verify": "Follow the withdrawal steps in the notice and confirm they work in one or two actions."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Read from https://openai.com/en-GB/policies/privacy-policy/ (3612 words)"
+   ],
+   "id": "notice-board",
+   "controlId": "DPDP-NOTICE-004",
+   "area": "Privacy notice",
+   "severity": "Medium",
+   "status": "fail",
+   "title": "Notice explains how to complain to the Data Protection Board",
+   "detail": "The notice does not mention the Data Protection Board of India. This is common in notices written for GDPR or older Indian rules.",
+   "legal": "DPDP Act 2023, s.5(1)(iii): the notice must explain how to make a complaint to the Data Protection Board of India.",
+   "fix": "Add a sentence explaining that, after using your grievance process, the reader may complain to the Data Protection Board of India, with a link to the Board.",
+   "verify": "Search the notice for \"Data Protection Board\"."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Last updated: \"Updated: 30 July 2026\"",
+    "Read from https://openai.com/en-GB/policies/privacy-policy/ (3612 words)"
+   ],
+   "id": "notice-dpdp-current",
+   "controlId": "DPDP-NOTICE-005",
+   "area": "Privacy notice",
+   "severity": "Low",
+   "status": "review",
+   "title": "Notice has been updated for the DPDP Act",
+   "detail": "The notice does not mention the DPDP Act; it was last updated in 2026. It may predate the Act.",
+   "legal": "DPDP Act 2023, s.5(1): the notice must describe the personal data and the purpose of processing, how to exercise the rights under s.6(4) and s.13, and how to complain to the Board.",
+   "fix": "Review the notice against the DPDP Act 2023 and DPDP Rules 2025, and show the date it was last updated.",
+   "verify": "Check the notice's \"last updated\" date and whether it mentions the DPDP Act."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "\"[For example, you may have the right to:] Access your Personal Data and information relating to how it is processed.\"",
+    "Read from https://openai.com/en-GB/policies/privacy-policy/ (3612 words)"
+   ],
+   "id": "rights-access",
+   "controlId": "DPDP-RIGHTS-001",
+   "area": "Data principal rights",
+   "severity": "Medium",
+   "status": "pass",
+   "title": "Right to access information is explained",
+   "detail": "The notice explains how to obtain information about the personal data being processed.",
+   "legal": "DPDP Act 2023, s.11: right to obtain a summary of personal data processed and the processing activities, and the identities of those it was shared with.",
+   "fix": "Explain that Data Principals can request a summary of their personal data, the processing done, and who it was shared with, and how to make that request.",
+   "verify": "Submit an access request through the channel in the notice and time the response."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Correction: \"Rectify or update your Personal Data\"",
+    "Erasure: \"For example, you can delete specific, or all, of your ChatGPT conversations, delete specific Memories⁠(opens in a new window), or delete your account.\"",
+    "Read from https://openai.com/en-GB/policies/privacy-policy/ (3612 words)"
+   ],
+   "id": "rights-correction-erasure",
+   "controlId": "DPDP-RIGHTS-002",
+   "area": "Data principal rights",
+   "severity": "High",
+   "status": "pass",
+   "title": "Rights to correction and erasure are explained",
+   "detail": "The notice explains both correction and erasure rights.",
+   "legal": "DPDP Act 2023, s.12: right to correction, completion, updating and erasure of personal data.",
+   "fix": "Explain how Data Principals can correct, complete, update and erase their personal data, and how to request it.",
+   "verify": "Submit a correction and an erasure request and confirm they are completed."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Read from https://openai.com/en-GB/policies/privacy-policy/ (3612 words)"
+   ],
+   "id": "rights-grievance",
+   "controlId": "DPDP-RIGHTS-003",
+   "area": "Data principal rights",
+   "severity": "High",
+   "status": "fail",
+   "title": "Grievance redressal channel is published",
+   "detail": "The notice does not describe how to raise a grievance.",
+   "legal": "DPDP Act 2023, s.13 and s.8(10): right to grievance redressal; the Data Fiduciary must run an effective grievance mechanism.",
+   "fix": "Name a grievance officer or team, give an email address and phone number, and state how quickly grievances are answered.",
+   "verify": "Send a test grievance to the published contact and record the response time."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Read from https://openai.com/en-GB/policies/privacy-policy/ (3612 words)"
+   ],
+   "id": "rights-nomination",
+   "controlId": "DPDP-RIGHTS-004",
+   "area": "Data principal rights",
+   "severity": "Medium",
+   "status": "fail",
+   "title": "Right to nominate is explained",
+   "detail": "The notice does not mention the right to nominate someone to exercise rights on the Data Principal's behalf. This right is specific to the DPDP Act and is usually missing from older notices.",
+   "legal": "DPDP Act 2023, s.14: right to nominate another person to exercise rights in the event of death or incapacity.",
+   "fix": "Explain that Data Principals may nominate another person to exercise their rights in the event of death or incapacity, and how to do so.",
+   "verify": "Search the notice for \"nominate\"."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "\"You can contact our data protection officer at dpo@openai.com.\"",
+    "Contact found: dsar@openai.com",
+    "Read from https://openai.com/en-GB/policies/privacy-policy/ (3612 words)"
+   ],
+   "id": "contact-officer",
+   "controlId": "DPDP-SECURITY-003",
+   "area": "Governance & security",
+   "severity": "Medium",
+   "status": "pass",
+   "title": "Privacy contact person is published",
+   "detail": "The notice names a responsible officer with a contact (dsar@openai.com).",
+   "legal": "DPDP Act 2023, s.8(9): publish the business contact of a Data Protection Officer, or of a person who can answer questions about processing.",
+   "fix": "Publish the name or designation, email and phone of your Data Protection Officer or the person who answers privacy questions.",
+   "verify": "Email the published contact with a privacy question and record the reply."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "\"Other Information You Provide: We collect other information that you provide to us, such as when you participate in our events or surveys, or when you provide us or a vendor operating on our behalf with information to establish your identity or age (collective…\"",
+    "Read from https://openai.com/en-GB/policies/privacy-policy/ (3612 words)"
+   ],
+   "id": "sharing-processors",
+   "controlId": "DPDP-SHARING-001",
+   "area": "Data handling & sharing",
+   "severity": "Medium",
+   "status": "pass",
+   "title": "Sharing with processors and third parties is disclosed",
+   "detail": "The notice explains that personal data is shared with third parties or processors.",
+   "legal": "DPDP Act 2023, s.8(2) and s.11(1)(b): processors may only be engaged under a valid contract, and Data Principals are entitled to know who their data was shared with.",
+   "fix": "List the categories of processors and third parties you share data with, what for, and that they act under contract.",
+   "verify": "Compare the notice against your vendor list and data processing agreements."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "\"Information we retain until you delete it: Some of our Services allow you to delete Personal Data stored in your account.\"",
+    "Read from https://openai.com/en-GB/policies/privacy-policy/ (3612 words)"
+   ],
+   "id": "sharing-retention",
+   "controlId": "DPDP-SHARING-002",
+   "area": "Data handling & sharing",
+   "severity": "Medium",
+   "status": "pass",
+   "title": "Retention period or criteria are explained",
+   "detail": "The notice explains how long personal data is kept.",
+   "legal": "DPDP Act 2023, s.8(7): personal data must be erased once the purpose is no longer served or consent is withdrawn, unless retention is required by law.",
+   "fix": "State how long each category of data is kept (or the criteria used), and that it is erased when no longer needed or when consent is withdrawn.",
+   "verify": "Check your systems actually delete data on the schedule the notice states."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "\"[Children] Our Services are not directed to, or intended for, children under 13.\"",
+    "\"Users under 18 must have permission from their parent or guardian to use our Services.\"",
+    "Read from https://openai.com/en-GB/policies/privacy-policy/ (3612 words)"
+   ],
+   "id": "children-consent",
+   "controlId": "DPDP-CHILDREN-001",
+   "area": "Children's data",
+   "severity": "High",
+   "status": "fail",
+   "title": "Children's data and parental consent are addressed",
+   "detail": "The notice uses an age of 13 for children. Under the DPDP Act a child is anyone under 18, so users aged 13–17 are treated as adults here. This usually means the notice was copied from a GDPR or US template.",
+   "legal": "DPDP Act 2023, s.2(f) and s.9: a child is anyone under 18; processing needs verifiable parental consent, and tracking, behavioural monitoring and targeted advertising directed at children are prohibited.",
+   "fix": "Treat everyone under 18 as a child. Describe how you obtain verifiable parental consent, and state that you do not track, profile or target ads at children.",
+   "verify": "Check the notice's age threshold and try signing up as a 16-year-old."
+  }
+ ],
+ "score": 73,
+ "summary": {
+  "passed": 11,
+  "failed": 5,
+  "review": 1,
+  "notEvaluated": 0,
+  "trackersEnabledByAccept": []
+ }
+}

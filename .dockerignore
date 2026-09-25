@@ -1,0 +1,19 @@
+**/node_modules
+.git
+.env
+data
+scanner-service/benchmark
+scanner-service/test
+scanner-service/scan-*.json
+*.md
+# Legacy Chrome extension files are not part of the service image.
+background.js
+content.js
+manifest.json
+models.js
+popup.*
+report-generator.js
+secret-detection.js
+security-probe.js
+utils*.js
+validation-workflow.js

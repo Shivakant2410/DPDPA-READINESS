@@ -1,0 +1,1212 @@
+{
+ "target": "https://www.comolho.com",
+ "finalUrl": "https://www.comolho.com/",
+ "siteDomain": "comolho.com",
+ "scannedAt": "2026-09-25T17:56:10.487Z",
+ "durationMs": 37940,
+ "engine": {
+  "browser": "chromium",
+  "version": "153.0.8010.12",
+  "method": "playwright-consent-journey-v1"
+ },
+ "http": {
+  "status": 200,
+  "https": true,
+  "securityHeaders": {
+   "strict-transport-security": "max-age=31556952",
+   "content-security-policy": null,
+   "x-content-type-options": "nosniff",
+   "referrer-policy": null,
+   "permissions-policy": null
+  }
+ },
+ "banner": {
+  "cmp": "Generic / custom banner",
+  "frameUrl": "https://www.comolho.com/",
+  "text": "",
+  "buttons": {
+   "accept": "Accept",
+   "reject": "Decline All",
+   "settings": "Cookie Settings",
+   "save": null
+  },
+  "labels": [
+   "Cookie Settings",
+   "Decline All",
+   "Accept"
+  ],
+  "closeAccepts": false
+ },
+ "privacyLinks": [
+  {
+   "text": "Privacy Policy",
+   "href": "https://www.comolho.com/privacy-policy",
+   "inFooter": true,
+   "strength": "strong"
+  }
+ ],
+ "cookiePolicyLinks": [],
+ "scrollConsent": null,
+ "browseError": null,
+ "notice": {
+  "url": "https://www.comolho.com/privacy-policy",
+  "status": 200,
+  "words": 1330,
+  "language": "en"
+ },
+ "phases": {
+  "preConsent": {
+   "requestCount": 285,
+   "thirdPartyHosts": [
+    "browser.sentry-cdn.com",
+    "bundler-velo.parastorage.com",
+    "frog.wix.com",
+    "panorama.wixapps.net",
+    "px.ads.linkedin.com",
+    "siteassets.parastorage.com",
+    "snap.licdn.com",
+    "static.parastorage.com",
+    "static.wixstatic.com",
+    "www-comolho-com.filesusr.com",
+    "www.linkedin.com"
+   ],
+   "trackers": [
+    {
+     "vendor": "LinkedIn Insight Tag",
+     "category": "advertising",
+     "hosts": [
+      "snap.licdn.com",
+      "px.ads.linkedin.com"
+     ],
+     "requests": 6,
+     "firstSeenMs": 629,
+     "sampleUrl": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+     "consentMode": {
+      "denied": 0,
+      "granted": 0,
+      "absent": 6
+     },
+     "nonEssential": true,
+     "deniedPingsOnly": false
+    }
+   ],
+   "cookies": [
+    {
+     "name": "AnalyticsSyncHistory",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 30
+    },
+    {
+     "name": "bcookie",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 365
+    },
+    {
+     "name": "bscookie",
+     "domain": ".www.linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 365
+    },
+    {
+     "name": "li_sugr",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 90
+    },
+    {
+     "name": "lidc",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 1
+    },
+    {
+     "name": "UserMatchHistory",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 30
+    },
+    {
+     "name": "__cf_bm",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "Cloudflare",
+     "category": "essential",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 0
+    },
+    {
+     "name": "hs",
+     "domain": ".www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "Lax",
+     "expiresInDays": "session"
+    },
+    {
+     "name": "server-session-bind",
+     "domain": "www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "Lax",
+     "expiresInDays": "session"
+    },
+    {
+     "name": "ssr-caching",
+     "domain": "www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": false,
+     "sameSite": "Lax",
+     "expiresInDays": 0
+    },
+    {
+     "name": "svSession",
+     "domain": ".www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 400
+    },
+    {
+     "name": "XSRF-TOKEN",
+     "domain": ".www.comolho.com",
+     "thirdParty": false,
+     "vendor": "CSRF protection",
+     "category": "essential",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": "session"
+    }
+   ]
+  },
+  "afterReject": {
+   "choice": {
+    "clicked": true,
+    "layer": 1,
+    "label": "Decline All",
+    "method": "layer1",
+    "cmp": "Generic / custom banner"
+   },
+   "bannerReshown": false,
+   "consentState": null,
+   "requestCount": 280,
+   "thirdPartyHosts": [
+    "browser.sentry-cdn.com",
+    "bundler-velo.parastorage.com",
+    "frog.wix.com",
+    "panorama.wixapps.net",
+    "px.ads.linkedin.com",
+    "siteassets.parastorage.com",
+    "snap.licdn.com",
+    "static.parastorage.com",
+    "static.wixstatic.com",
+    "www-comolho-com.filesusr.com"
+   ],
+   "trackers": [
+    {
+     "vendor": "LinkedIn Insight Tag",
+     "category": "advertising",
+     "hosts": [
+      "snap.licdn.com",
+      "px.ads.linkedin.com"
+     ],
+     "requests": 4,
+     "firstSeenMs": 11091,
+     "sampleUrl": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+     "consentMode": {
+      "denied": 0,
+      "granted": 0,
+      "absent": 4
+     },
+     "nonEssential": true,
+     "deniedPingsOnly": false
+    }
+   ],
+   "cookies": [
+    {
+     "name": "AnalyticsSyncHistory",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 30
+    },
+    {
+     "name": "bcookie",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 365
+    },
+    {
+     "name": "bscookie",
+     "domain": ".www.linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 365
+    },
+    {
+     "name": "li_sugr",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 90
+    },
+    {
+     "name": "lidc",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 1
+    },
+    {
+     "name": "UserMatchHistory",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 30
+    },
+    {
+     "name": "__cf_bm",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "Cloudflare",
+     "category": "essential",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 0
+    },
+    {
+     "name": "consent-policy",
+     "domain": ".comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": false,
+     "sameSite": "Lax",
+     "expiresInDays": 365
+    },
+    {
+     "name": "hs",
+     "domain": ".www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "Lax",
+     "expiresInDays": "session"
+    },
+    {
+     "name": "server-session-bind",
+     "domain": "www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "Lax",
+     "expiresInDays": "session"
+    },
+    {
+     "name": "ssr-caching",
+     "domain": "www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": false,
+     "sameSite": "Lax",
+     "expiresInDays": 0
+    },
+    {
+     "name": "svSession",
+     "domain": ".www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 400
+    },
+    {
+     "name": "XSRF-TOKEN",
+     "domain": ".www.comolho.com",
+     "thirdParty": false,
+     "vendor": "CSRF protection",
+     "category": "essential",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": "session"
+    }
+   ]
+  },
+  "afterAccept": {
+   "choice": {
+    "clicked": true,
+    "layer": 1,
+    "label": "Accept",
+    "method": "layer1",
+    "cmp": "Generic / custom banner"
+   },
+   "requestCount": 313,
+   "thirdPartyHosts": [
+    "analytics.google.com",
+    "browser.sentry-cdn.com",
+    "bundler-velo.parastorage.com",
+    "cf06bdf3-5bab-4f20-b165-97fb723dac6a.wixappcloud.com",
+    "connect.facebook.net",
+    "frog.wix.com",
+    "panorama.wixapps.net",
+    "px.ads.linkedin.com",
+    "siteassets.parastorage.com",
+    "snap.licdn.com",
+    "static.parastorage.com",
+    "static.wixstatic.com",
+    "stats.g.doubleclick.net",
+    "www-comolho-com.filesusr.com",
+    "www.facebook.com",
+    "www.google.co.in",
+    "www.googletagmanager.com"
+   ],
+   "trackers": [
+    {
+     "vendor": "Google gtag.js (loader)",
+     "category": "tag-manager",
+     "hosts": [
+      "www.googletagmanager.com"
+     ],
+     "requests": 3,
+     "firstSeenMs": 9494,
+     "sampleUrl": "https://www.googletagmanager.com/gtag/js?id=G-XLLM7NX74T",
+     "consentMode": {
+      "denied": 0,
+      "granted": 0,
+      "absent": 3
+     },
+     "nonEssential": false,
+     "deniedPingsOnly": false
+    },
+    {
+     "vendor": "Meta Pixel",
+     "category": "advertising",
+     "hosts": [
+      "connect.facebook.net",
+      "www.facebook.com"
+     ],
+     "requests": 6,
+     "firstSeenMs": 9500,
+     "sampleUrl": "https://connect.facebook.net/en_US/fbevents.js",
+     "consentMode": {
+      "denied": 0,
+      "granted": 0,
+      "absent": 6
+     },
+     "nonEssential": true,
+     "deniedPingsOnly": false
+    },
+    {
+     "vendor": "Google Tag Manager",
+     "category": "tag-manager",
+     "hosts": [
+      "www.googletagmanager.com"
+     ],
+     "requests": 2,
+     "firstSeenMs": 9504,
+     "sampleUrl": "https://www.googletagmanager.com/gtm.js?id=GTM-5BWGK5C",
+     "consentMode": {
+      "denied": 0,
+      "granted": 0,
+      "absent": 2
+     },
+     "nonEssential": false,
+     "deniedPingsOnly": false
+    },
+    {
+     "vendor": "Google Analytics",
+     "category": "analytics",
+     "hosts": [
+      "analytics.google.com"
+     ],
+     "requests": 1,
+     "firstSeenMs": 10237,
+     "sampleUrl": "https://analytics.google.com/g/collect?v=2&tid=G-XLLM7NX74T&gtm=45je69n1v9199357853za200zd9199357853xf1&_p=1790358997933&_gaz=1&gcs=G111&gcd=13t3t3t3t5l1&npa=0&dma=0&gdid=dYzMzMD&_eu=AAAAACAC&cid=830592254.1790358999&frm=0&ibt=1&ngs=1&pscdl",
+     "consentMode": {
+      "denied": 0,
+      "granted": 1,
+      "absent": 0
+     },
+     "nonEssential": true,
+     "deniedPingsOnly": false
+    },
+    {
+     "vendor": "Google Ads (DoubleClick)",
+     "category": "advertising",
+     "hosts": [
+      "stats.g.doubleclick.net"
+     ],
+     "requests": 1,
+     "firstSeenMs": 10238,
+     "sampleUrl": "https://stats.g.doubleclick.net/g/collect?v=2&ngs=1&ibt=1&tid=G-XLLM7NX74T&cid=830592254.1790358999&gtm=45je69n1v9199357853za200zd9199357853xf1&rcb=10&aip=1&uid=318f0b42-53f4-48fd-862f-ebeeb51ed27a&dma=0&gcs=G111&gcd=13t3t3t3t5l1&npa=0&frm=",
+     "consentMode": {
+      "denied": 0,
+      "granted": 1,
+      "absent": 0
+     },
+     "nonEssential": true,
+     "deniedPingsOnly": false
+    },
+    {
+     "vendor": "Google Ads",
+     "category": "advertising",
+     "hosts": [
+      "www.google.co.in"
+     ],
+     "requests": 1,
+     "firstSeenMs": 10239,
+     "sampleUrl": "https://www.google.co.in/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&ngs=1&ibt=1&tid=G-XLLM7NX74T&cid=830592254.1790358999&gtm=45je69n1v9199357853za200zd9199357853xf1&rcb=10&aip=1&uid=318f0b42-53f4-48fd-862f-ebeeb51ed27a&dma=0&gcs=G111&gcd=13t3",
+     "consentMode": {
+      "denied": 0,
+      "granted": 1,
+      "absent": 0
+     },
+     "nonEssential": true,
+     "deniedPingsOnly": false
+    },
+    {
+     "vendor": "LinkedIn Insight Tag",
+     "category": "advertising",
+     "hosts": [
+      "snap.licdn.com",
+      "px.ads.linkedin.com"
+     ],
+     "requests": 4,
+     "firstSeenMs": 12228,
+     "sampleUrl": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+     "consentMode": {
+      "denied": 0,
+      "granted": 0,
+      "absent": 4
+     },
+     "nonEssential": true,
+     "deniedPingsOnly": false
+    }
+   ],
+   "cookies": [
+    {
+     "name": "_fbp",
+     "domain": ".comolho.com",
+     "thirdParty": false,
+     "vendor": "Meta Pixel",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": false,
+     "sameSite": "Lax",
+     "expiresInDays": 90
+    },
+    {
+     "name": "_ga",
+     "domain": ".comolho.com",
+     "thirdParty": false,
+     "vendor": "Google Analytics",
+     "category": "analytics",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": false,
+     "sameSite": "Lax",
+     "expiresInDays": 400
+    },
+    {
+     "name": "_ga_XLLM7NX74T",
+     "domain": ".comolho.com",
+     "thirdParty": false,
+     "vendor": "Google Analytics",
+     "category": "analytics",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": false,
+     "sameSite": "Lax",
+     "expiresInDays": 400
+    },
+    {
+     "name": "AnalyticsSyncHistory",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 30
+    },
+    {
+     "name": "bcookie",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 365
+    },
+    {
+     "name": "bscookie",
+     "domain": ".www.linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 365
+    },
+    {
+     "name": "fr",
+     "domain": ".facebook.com",
+     "thirdParty": true,
+     "vendor": "Meta",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 90
+    },
+    {
+     "name": "li_sugr",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 90
+    },
+    {
+     "name": "lidc",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 1
+    },
+    {
+     "name": "UserMatchHistory",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "LinkedIn",
+     "category": "advertising",
+     "nonEssential": true,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 30
+    },
+    {
+     "name": "__cf_bm",
+     "domain": ".linkedin.com",
+     "thirdParty": true,
+     "vendor": "Cloudflare",
+     "category": "essential",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 0
+    },
+    {
+     "name": "bSession",
+     "domain": ".www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 0
+    },
+    {
+     "name": "consent-policy",
+     "domain": ".comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": false,
+     "sameSite": "Lax",
+     "expiresInDays": 365
+    },
+    {
+     "name": "hs",
+     "domain": ".www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "Lax",
+     "expiresInDays": "session"
+    },
+    {
+     "name": "server-session-bind",
+     "domain": "www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "Lax",
+     "expiresInDays": "session"
+    },
+    {
+     "name": "ssr-caching",
+     "domain": "www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": false,
+     "sameSite": "Lax",
+     "expiresInDays": 0
+    },
+    {
+     "name": "svSession",
+     "domain": ".www.comolho.com",
+     "thirdParty": false,
+     "vendor": null,
+     "category": "unclassified",
+     "nonEssential": false,
+     "httpOnly": true,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": 400
+    },
+    {
+     "name": "XSRF-TOKEN",
+     "domain": ".www.comolho.com",
+     "thirdParty": false,
+     "vendor": "CSRF protection",
+     "category": "essential",
+     "nonEssential": false,
+     "httpOnly": false,
+     "secure": true,
+     "sameSite": "None",
+     "expiresInDays": "session"
+    }
+   ]
+  }
+ },
+ "checks": [
+  {
+   "confidence": "high",
+   "evidence": [
+    "LinkedIn Insight Tag (advertising): 6 request(s) to snap.licdn.com, px.ads.linkedin.com, first at 629 ms. Example: https://snap.licdn.com/li.lms-analytics/insight.min.js",
+    "Cookie \"AnalyticsSyncHistory\" on .linkedin.com (LinkedIn, advertising; expires in 30 day(s))",
+    "Cookie \"bcookie\" on .linkedin.com (LinkedIn, advertising; expires in 365 day(s))",
+    "Cookie \"bscookie\" on .www.linkedin.com (LinkedIn, advertising; expires in 365 day(s); HttpOnly)",
+    "Cookie \"li_sugr\" on .linkedin.com (LinkedIn, advertising; expires in 90 day(s))",
+    "Cookie \"lidc\" on .linkedin.com (LinkedIn, advertising; expires in 1 day(s))",
+    "Cookie \"UserMatchHistory\" on .linkedin.com (LinkedIn, advertising; expires in 30 day(s))"
+   ],
+   "id": "pre-consent-tracking",
+   "controlId": "DPDP-CONSENT-002",
+   "area": "Consent & cookies",
+   "title": "No non-essential tracking before consent",
+   "severity": "High",
+   "status": "fail",
+   "detail": "Before the visitor made any choice, 1 non-essential tracker(s) sent requests and 6 non-essential cookie(s) were set.",
+   "legal": "DPDP Act 2023, s.6(1): consent must be free, specific, informed, unconditional and unambiguous, given by a clear affirmative action; s.4: processing needs consent or a legitimate use.",
+   "fix": "Load these tags only after an affirmative \"Accept\". In Google Tag Manager, add a consent-based trigger (or Consent Mode with default \"denied\") to each listed tag; for hard-coded pixels, move them behind your consent platform's callback.",
+   "verify": "Open the site in a private window, do not touch the banner, and check DevTools > Network and Application > Cookies for the listed vendors."
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "Platform: Generic / custom banner",
+    "Buttons found: accept = \"Accept\", reject = \"Decline All\", settings = \"Cookie Settings\"",
+    "Banner text: \"\""
+   ],
+   "id": "consent-banner",
+   "controlId": "DPDP-CONSENT-001",
+   "area": "Consent & cookies",
+   "title": "Consent banner shown to first-time visitors",
+   "severity": "High",
+   "status": "pass",
+   "detail": "A consent banner was detected (Generic / custom banner).",
+   "legal": "DPDP Act 2023, s.5: a notice must accompany or precede every request for consent.",
+   "fix": "Show a consent notice on first visit that names the purposes and offers Accept and Reject with equal prominence.",
+   "verify": "Open the site in a private window and confirm the banner appears before any interaction."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [],
+   "id": "affirmative-consent",
+   "controlId": "DPDP-CONSENT-005",
+   "area": "Consent & cookies",
+   "title": "Consent requires a clear affirmative action",
+   "severity": "High",
+   "status": "pass",
+   "detail": "The banner wording does not claim consent from continued browsing, and closing it is not recorded as acceptance.",
+   "legal": "DPDP Act 2023, s.6(1): consent must be free, specific, informed, unconditional and unambiguous, given by a clear affirmative action; s.4: processing needs consent or a legitimate use.",
+   "fix": "Remove \"by continuing to use this site you agree\" wording. Record consent only when the visitor clicks Accept, and keep tracking off until then. Make the close control equivalent to Reject, or remove it.",
+   "verify": "Scroll and click around without touching the banner, then check Application > Cookies: no tracking cookies should appear."
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "Buttons on first layer: \"Cookie Settings\", \"Decline All\", \"Accept\""
+   ],
+   "id": "reject-parity",
+   "controlId": "DPDP-CONSENT-003",
+   "area": "Consent & cookies",
+   "title": "Reject is as easy as Accept",
+   "severity": "High",
+   "status": "pass",
+   "detail": "The first layer offers \"Decline All\" alongside \"Accept\".",
+   "legal": "DPDP Act 2023, s.6(1) and s.6(4): withdrawing consent must be as easy as giving it.",
+   "fix": "Put a \"Reject all\" button on the first layer with the same size and styling as \"Accept all\".",
+   "verify": "Count the clicks needed to reject compared with accept."
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "Reject method: layer1",
+    "LinkedIn Insight Tag (advertising): 4 request(s) to snap.licdn.com, px.ads.linkedin.com, first at 11.1 s. Example: https://snap.licdn.com/li.lms-analytics/insight.min.js"
+   ],
+   "id": "reject-honoured",
+   "controlId": "DPDP-CONSENT-004",
+   "area": "Consent & cookies",
+   "title": "Rejecting consent stops tracking",
+   "severity": "High",
+   "status": "fail",
+   "detail": "After clicking \"Decline All\" and reloading, 1 non-essential tracker(s) still fired and 0 new non-essential cookie(s) were set.",
+   "legal": "DPDP Act 2023, s.6(1) and s.6(4): withdrawing consent must be as easy as giving it.",
+   "fix": "Make sure every listed tag checks the stored consent state on each page load, not only when the banner is first shown.",
+   "verify": "Reject in a private window, reload, and confirm none of the listed requests or cookies appear."
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "Cookie \"AnalyticsSyncHistory\" on .linkedin.com (LinkedIn, advertising; expires in 30 day(s))",
+    "Cookie \"bcookie\" on .linkedin.com (LinkedIn, advertising; expires in 365 day(s))",
+    "Cookie \"bscookie\" on .www.linkedin.com (LinkedIn, advertising; expires in 365 day(s); HttpOnly)",
+    "Cookie \"li_sugr\" on .linkedin.com (LinkedIn, advertising; expires in 90 day(s))",
+    "Cookie \"lidc\" on .linkedin.com (LinkedIn, advertising; expires in 1 day(s))",
+    "Cookie \"UserMatchHistory\" on .linkedin.com (LinkedIn, advertising; expires in 30 day(s))"
+   ],
+   "id": "reject-cleanup",
+   "controlId": "DPDP-CONSENT-004",
+   "area": "Consent & cookies",
+   "title": "Cookies set before consent are removed on reject",
+   "severity": "Medium",
+   "status": "fail",
+   "detail": "6 non-essential cookie(s) set before consent were still present after rejecting.",
+   "legal": "DPDP Act 2023, s.6(1) and s.6(4): withdrawing consent must be as easy as giving it.",
+   "fix": "Stop setting these before consent (see the pre-consent finding). If any must exist, delete them when the visitor rejects.",
+   "verify": "After rejecting, check Application > Cookies for the listed names."
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "\"Privacy Policy\" -> https://www.comolho.com/privacy-policy (strong, footer)"
+   ],
+   "id": "privacy-link",
+   "controlId": "DPDP-NOTICE-001",
+   "area": "Privacy notice",
+   "title": "Privacy notice linked from the homepage",
+   "severity": "High",
+   "status": "pass",
+   "detail": "A privacy notice link was found on the rendered homepage. Its content is not yet analysed.",
+   "legal": "DPDP Act 2023, s.5: a notice must accompany or precede every request for consent.",
+   "fix": "Link the privacy notice from the site footer and from every form that collects personal data.",
+   "verify": "Check the footer and forms for a visible privacy notice link."
+  },
+  {
+   "confidence": "high",
+   "evidence": [],
+   "id": "https",
+   "controlId": "DPDP-SECURITY-001",
+   "area": "Governance & security",
+   "title": "Site served over HTTPS",
+   "severity": "High",
+   "status": "pass",
+   "detail": "Final URL uses HTTPS: https://www.comolho.com/",
+   "legal": "DPDP Act 2023, s.8(5): reasonable security safeguards to prevent personal data breach.",
+   "fix": "Serve every page over HTTPS and redirect HTTP to HTTPS.",
+   "verify": "Visit the http:// address and confirm it redirects to https://."
+  },
+  {
+   "confidence": "high",
+   "evidence": [
+    "strict-transport-security: max-age=31556952",
+    "content-security-policy: (missing)",
+    "x-content-type-options: nosniff",
+    "referrer-policy: (missing)",
+    "permissions-policy: (missing)"
+   ],
+   "id": "security-headers",
+   "controlId": "DPDP-SECURITY-002",
+   "area": "Governance & security",
+   "title": "Security response headers present",
+   "severity": "Low",
+   "status": "fail",
+   "detail": "Missing on the homepage response: content-security-policy, referrer-policy, permissions-policy.",
+   "legal": "DPDP Act 2023, s.8(5): reasonable security safeguards to prevent personal data breach. Headers are a hygiene indicator, not an explicit statutory requirement.",
+   "fix": "Add the missing headers at your CDN or web server.",
+   "verify": "Inspect the homepage response headers in DevTools > Network."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Data categories named: email, postal address, location",
+    "Purpose: \"The personal data collected or processed through our services concerning our Customers, their End Users, our Partners, or visitors to the Com Olho website will be used for:\"",
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "notice-data-purpose",
+   "controlId": "DPDP-NOTICE-002",
+   "area": "Privacy notice",
+   "severity": "High",
+   "status": "pass",
+   "title": "Notice lists the personal data and why it is used",
+   "detail": "The notice names 3 categories of personal data and explains what they are used for.",
+   "legal": "DPDP Act 2023, s.5(1): the notice must describe the personal data and the purpose of processing, how to exercise the rights under s.6(4) and s.13, and how to complain to the Board.",
+   "fix": "List each item of personal data you collect (for example name, email, phone, IP address) next to the specific purpose it is used for.",
+   "verify": "Read the notice as a visitor: can you tell what data is collected and why, item by item?"
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "\"Right to Withdraw Consent\"",
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "notice-withdrawal",
+   "controlId": "DPDP-NOTICE-003",
+   "area": "Privacy notice",
+   "severity": "High",
+   "status": "pass",
+   "title": "Notice explains how to withdraw consent",
+   "detail": "The notice explains that consent can be withdrawn.",
+   "legal": "DPDP Act 2023, s.5(1)(ii) and s.6(4): the notice must explain how to withdraw consent, and withdrawing must be as easy as giving consent.",
+   "fix": "State that consent can be withdrawn at any time, and give the exact way to do it (for example a link, settings page, or email address).",
+   "verify": "Follow the withdrawal steps in the notice and confirm they work in one or two actions."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "notice-board",
+   "controlId": "DPDP-NOTICE-004",
+   "area": "Privacy notice",
+   "severity": "Medium",
+   "status": "fail",
+   "title": "Notice explains how to complain to the Data Protection Board",
+   "detail": "The notice does not mention the Data Protection Board of India. This is common in notices written for GDPR or older Indian rules.",
+   "legal": "DPDP Act 2023, s.5(1)(iii): the notice must explain how to make a complaint to the Data Protection Board of India.",
+   "fix": "Add a sentence explaining that, after using your grievance process, the reader may complain to the Data Protection Board of India, with a link to the Board.",
+   "verify": "Search the notice for \"Data Protection Board\"."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "\"The Digital Personal Data Protection Act, 2023 (India) (\"DPDP Act\")\"",
+    "Last updated: \"Date : 03rd July 2024\"",
+    "Refers to: GDPR",
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "notice-dpdp-current",
+   "controlId": "DPDP-NOTICE-005",
+   "area": "Privacy notice",
+   "severity": "Low",
+   "status": "pass",
+   "title": "Notice has been updated for the DPDP Act",
+   "detail": "The notice refers to the DPDP Act.",
+   "legal": "DPDP Act 2023, s.5(1): the notice must describe the personal data and the purpose of processing, how to exercise the rights under s.6(4) and s.13, and how to complain to the Board.",
+   "fix": "Review the notice against the DPDP Act 2023 and DPDP Rules 2025, and show the date it was last updated.",
+   "verify": "Check the notice's \"last updated\" date and whether it mentions the DPDP Act."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "\"[Your Legal Rights] Request Access to Your Personal Data\"",
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "rights-access",
+   "controlId": "DPDP-RIGHTS-001",
+   "area": "Data principal rights",
+   "severity": "Medium",
+   "status": "pass",
+   "title": "Right to access information is explained",
+   "detail": "The notice explains how to obtain information about the personal data being processed.",
+   "legal": "DPDP Act 2023, s.11: right to obtain a summary of personal data processed and the processing activities, and the identities of those it was shared with.",
+   "fix": "Explain that Data Principals can request a summary of their personal data, the processing done, and who it was shared with, and how to make that request.",
+   "verify": "Submit an access request through the channel in the notice and time the response."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Correction: \"Request Correction of Your Personal Data\"",
+    "Erasure: \"Request Erasure of Your Personal Data\"",
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "rights-correction-erasure",
+   "controlId": "DPDP-RIGHTS-002",
+   "area": "Data principal rights",
+   "severity": "High",
+   "status": "pass",
+   "title": "Rights to correction and erasure are explained",
+   "detail": "The notice explains both correction and erasure rights.",
+   "legal": "DPDP Act 2023, s.12: right to correction, completion, updating and erasure of personal data.",
+   "fix": "Explain how Data Principals can correct, complete, update and erase their personal data, and how to request it.",
+   "verify": "Submit a correction and an erasure request and confirm they are completed."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "rights-grievance",
+   "controlId": "DPDP-RIGHTS-003",
+   "area": "Data principal rights",
+   "severity": "High",
+   "status": "fail",
+   "title": "Grievance redressal channel is published",
+   "detail": "The notice does not describe how to raise a grievance.",
+   "legal": "DPDP Act 2023, s.13 and s.8(10): right to grievance redressal; the Data Fiduciary must run an effective grievance mechanism.",
+   "fix": "Name a grievance officer or team, give an email address and phone number, and state how quickly grievances are answered.",
+   "verify": "Send a test grievance to the published contact and record the response time."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "rights-nomination",
+   "controlId": "DPDP-RIGHTS-004",
+   "area": "Data principal rights",
+   "severity": "Medium",
+   "status": "fail",
+   "title": "Right to nominate is explained",
+   "detail": "The notice does not mention the right to nominate someone to exercise rights on the Data Principal's behalf. This right is specific to the DPDP Act and is usually missing from older notices.",
+   "legal": "DPDP Act 2023, s.14: right to nominate another person to exercise rights in the event of death or incapacity.",
+   "fix": "Explain that Data Principals may nominate another person to exercise their rights in the event of death or incapacity, and how to do so.",
+   "verify": "Search the notice for \"nominate\"."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "\"Contact Us\"",
+    "Contact found: abhinav@comolho.com",
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "contact-officer",
+   "controlId": "DPDP-SECURITY-003",
+   "area": "Governance & security",
+   "severity": "Medium",
+   "status": "review",
+   "title": "Privacy contact person is published",
+   "detail": "A general contact (abhinav@comolho.com) is given, but no Data Protection Officer or named person responsible for privacy questions.",
+   "legal": "DPDP Act 2023, s.8(9): publish the business contact of a Data Protection Officer, or of a person who can answer questions about processing.",
+   "fix": "Publish the name or designation, email and phone of your Data Protection Officer or the person who answers privacy questions.",
+   "verify": "Email the published contact with a privacy question and record the reply."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "\"Providing and administering opt-in contests or other marketing or promotional activities on the comolho.com or affiliate websites.\"",
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "sharing-processors",
+   "controlId": "DPDP-SHARING-001",
+   "area": "Data handling & sharing",
+   "severity": "Medium",
+   "status": "pass",
+   "title": "Sharing with processors and third parties is disclosed",
+   "detail": "The notice explains that personal data is shared with third parties or processors.",
+   "legal": "DPDP Act 2023, s.8(2) and s.11(1)(b): processors may only be engaged under a valid contract, and Data Principals are entitled to know who their data was shared with.",
+   "fix": "List the categories of processors and third parties you share data with, what for, and that they act under contract.",
+   "verify": "Compare the notice against your vendor list and data processing agreements."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "sharing-retention",
+   "controlId": "DPDP-SHARING-002",
+   "area": "Data handling & sharing",
+   "severity": "Medium",
+   "status": "fail",
+   "title": "Retention period or criteria are explained",
+   "detail": "The notice does not explain how long personal data is kept or when it is erased.",
+   "legal": "DPDP Act 2023, s.8(7): personal data must be erased once the purpose is no longer served or consent is withdrawn, unless retention is required by law.",
+   "fix": "State how long each category of data is kept (or the criteria used), and that it is erased when no longer needed or when consent is withdrawn.",
+   "verify": "Check your systems actually delete data on the schedule the notice states."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Not mentioned: LinkedIn Insight Tag (advertising)",
+    "Not mentioned: Meta Pixel (advertising)",
+    "Not mentioned: Google Analytics (analytics)",
+    "Not mentioned: Google Ads (DoubleClick) (advertising)",
+    "Not mentioned: Google Ads (advertising)",
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "sharing-undisclosed-vendors",
+   "controlId": "DPDP-SHARING-003",
+   "area": "Data handling & sharing",
+   "severity": "Medium",
+   "status": "review",
+   "title": "Trackers observed on the site are named in the notice",
+   "detail": "5 of 5 tracking vendor(s) seen running on the site are not mentioned anywhere in the notice.",
+   "legal": "DPDP Act 2023, s.8(2) and s.11(1)(b): processors may only be engaged under a valid contract, and Data Principals are entitled to know who their data was shared with.",
+   "fix": "Name each analytics, advertising and session-recording vendor in the notice (or cookie policy linked from it) with its purpose.",
+   "verify": "Compare the vendors in this report with the notice text."
+  },
+  {
+   "confidence": "medium",
+   "evidence": [
+    "Read from https://www.comolho.com/privacy-policy (1330 words)"
+   ],
+   "id": "children-consent",
+   "controlId": "DPDP-CHILDREN-001",
+   "area": "Children's data",
+   "severity": "Medium",
+   "status": "review",
+   "title": "Children's data and parental consent are addressed",
+   "detail": "The notice does not address children. If anyone under 18 can use your service, you need verifiable parental consent and must not track or target them with ads.",
+   "legal": "DPDP Act 2023, s.2(f) and s.9: a child is anyone under 18; processing needs verifiable parental consent, and tracking, behavioural monitoring and targeted advertising directed at children are prohibited.",
+   "fix": "Treat everyone under 18 as a child. Describe how you obtain verifiable parental consent, and state that you do not track, profile or target ads at children.",
+   "verify": "Check the notice's age threshold and try signing up as a 16-year-old."
+  }
+ ],
+ "score": 62,
+ "summary": {
+  "passed": 11,
+  "failed": 8,
+  "review": 3,
+  "notEvaluated": 0,
+  "trackersEnabledByAccept": [
+   "Meta Pixel",
+   "Google Analytics",
+   "Google Ads (DoubleClick)",
+   "Google Ads",
+   "LinkedIn Insight Tag"
+  ]
+ }
+}

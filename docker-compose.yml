@@ -1,0 +1,47 @@
+# docker compose up -d --build
+# Runs HypenSec Astra behind Caddy, which obtains and renews the HTTPS certificate automatically.
+# Set ASTRA_DOMAIN (e.g. astra.hypensec.com) in .env and point its DNS A record at this server first.
+
+services:
+  astra:
+    build: .
+    image: hypensec/astra:latest
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      TRUST_PROXY: "1"
+    init: true
+    restart: unless-stopped
+    # Chromium needs more shared memory than Docker's 64 MB default.
+    shm_size: "1gb"
+    mem_limit: 3g
+    cpus: 2
+    volumes:
+      - ./data:/app/data # audit log (keep for one year; back it up)
+    expose:
+      - "8787" # reachable only through Caddy, not published on the host
+    networks: [web]
+    security_opt:
+      - no-new-privileges:true
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      ASTRA_DOMAIN: ${ASTRA_DOMAIN:?Set ASTRA_DOMAIN in .env}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [astra]
+    networks: [web]
+
+networks:
+  web: {}
+
+volumes:
+  caddy_data: {}
+  caddy_config: {}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0f1c" />
+    <meta name="description" content="HypenSec Astra: compliance readiness assessments and DPDPA website scans by HypenSec." />
+    <title>HypenSec Astra — Compliance readiness</title>
+    <link rel="icon" type="image/png" href="icons/favicon-64.png" />
+    <link rel="stylesheet" href="grc.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="HypenSec Astra home">
+          <img class="brand-mark" src="icons/hypensec-mark.png" alt="" width="36" height="36" />
+          <span class="brand-name">HypenSec</span>
+          <span class="product-tag">Astra</span>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"></path></svg>
+        </button>
+      </header>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-item active" data-view="dashboard"><span class="nav-icon">▦</span>Dashboard</button>
+        <button class="nav-item" data-view="scan"><span class="nav-icon">◎</span>Website Scan</button>
+        <button class="nav-item" data-view="frameworks"><span class="nav-icon">▥</span>Frameworks</button>
+        <button class="nav-item" data-view="checklists"><span class="nav-icon">☑</span>Checklists</button>
+        <button class="nav-item" data-view="templates"><span class="nav-icon">□</span>Templates</button>
+        <button class="nav-item" data-view="toolkit"><span class="nav-icon">▱</span>My Toolkit</button>
+        <button class="nav-item" data-view="about"><span class="nav-icon">ⓘ</span>About</button>
+      </nav>
+
+      <main id="main-content" class="main"></main>
+      <footer class="site-footer">
+        <span>© HypenSec</span>
+        <a href="privacy.html">Privacy notice</a>
+        <a href="terms.html">Terms of use</a>
+        <a href="https://hypensec.com" rel="noopener">hypensec.com</a>
+      </footer>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <dialog id="assessment-dialog">
+      <button class="dialog-close" aria-label="Close">×</button>
+      <div class="eyebrow">Assessment</div>
+      <h2 id="dialog-title">Start assessment</h2>
+      <p>A short set of questions scores your current maturity for each control. Progress is kept in this browser.</p>
+      <button class="button button-primary dialog-start">Begin assessment <span>→</span></button>
+    </dialog>
+    <script src="grc.js"></script>
+  </body>
+</html>

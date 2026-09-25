@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=460, initial-scale=1.0">
+  <title>AI Endpoint Scanner</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <div class="logo">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <circle cx="10" cy="10" r="9" stroke="#22d3ee" stroke-width="1.5"/>
+          <circle cx="10" cy="10" r="4" fill="#22d3ee" opacity="0.6"/>
+          <path d="M10 1v3M10 16v3M1 10h3M16 10h3" stroke="#22d3ee" stroke-width="1.2"/>
+        </svg>
+      </div>
+      <div class="header-title">
+        <h1>AI Endpoint Scanner</h1>
+        <span class="version">v1.0.0</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <div id="risk-badge" class="risk-badge minimal" title="Risk Score">
+        <span class="risk-score">0</span>
+        <span class="risk-label">Minimal</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Status Bar -->
+  <div class="status-bar">
+    <div class="status-indicator">
+      <span id="status-dot" class="status-dot idle"></span>
+      <span id="status-text" class="status-text">Ready to scan</span>
+    </div>
+    <div class="status-meta">
+      <span id="scan-url" class="scan-url" title="">—</span>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Action Buttons -->
+    <div class="action-bar">
+      <button id="btn-scan" class="btn btn-primary" title="Start scanning the current page">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+          <path d="M7 1a6 6 0 100 12A6 6 0 007 1zm0 1.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zM7 4v3.5l2.5 1.5-.75 1.25L5.5 8V4H7z"/>
+        </svg>
+        Start Scan
+      </button>
+      <button id="btn-probe" class="btn btn-warning" disabled title="Run security probes on discovered endpoints">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+          <path d="M6 1L1 13h2.5l1-2.5h5l1 2.5H13L8 1H6zm.5 3L8.5 9h-4l2-5z"/>
+        </svg>
+        Run Probes
+      </button>
+      <button id="btn-report" class="btn btn-success" disabled title="Generate a security report">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+          <path d="M2 1a1 1 0 00-1 1v10a1 1 0 001 1h10a1 1 0 001-1V4l-3-3H2zm1 1h6.5L12 4.5V11H3V2zm1 2v1h6V4H4zm0 3v1h6V7H4zm0 3v1h3v-1H4z"/>
+        </svg>
+        Report
+      </button>
+      <button id="btn-clear" class="btn btn-ghost" title="Clear scan results">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+          <path d="M4 1v1H1v1h1v9a1 1 0 001 1h8a1 1 0 001-1V3h1V2H9V1H4zm1 1h3v1H5V2zM3 3h8v9H3V3zm2 2v6h1V5H5zm2 0v6h1V5H7z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Results Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-tab="endpoints">
+        Endpoints <span id="endpoints-count" class="tab-badge">0</span>
+      </button>
+      <button class="tab" data-tab="widgets">
+        Widgets <span id="widgets-count" class="tab-badge">0</span>
+      </button>
+      <button class="tab" data-tab="probes">
+        Probes <span id="probes-count" class="tab-badge">0</span>
+      </button>
+      <button class="tab" data-tab="report">
+        Report
+      </button>
+    </div>
+
+    <!-- Tab Panels -->
+    <div class="tab-panels">
+      <!-- Endpoints Panel -->
+      <div id="panel-endpoints" class="tab-panel active">
+        <div class="panel-empty" id="endpoints-empty">
+          <div class="empty-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="12" stroke="#475569" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <path d="M16 10v6l4 2" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p>No endpoints discovered yet.</p>
+          <p class="empty-hint">Click "Start Scan" to begin scanning the current page.</p>
+        </div>
+        <div class="panel-list" id="endpoints-list" style="display:none;">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <!-- Widgets Panel -->
+      <div id="panel-widgets" class="tab-panel">
+        <div class="panel-empty" id="widgets-empty">
+          <div class="empty-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <rect x="6" y="8" width="20" height="16" rx="3" stroke="#475569" stroke-width="1.5"/>
+              <circle cx="16" cy="16" r="3" stroke="#475569" stroke-width="1.5"/>
+              <path d="M14 22h4" stroke="#475569" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p>No widgets detected yet.</p>
+          <p class="empty-hint">Widgets are found via DOM scanning and network monitoring.</p>
+        </div>
+        <div class="panel-list" id="widgets-list" style="display:none;">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <!-- Probes Panel -->
+      <div id="panel-probes" class="tab-panel">
+        <div class="panel-empty" id="probes-empty">
+          <div class="empty-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M8 4l8 12-8 12h4l6-9 6 9h4l-8-12 8-12h-4l-6 9-6-9H8z" stroke="#475569" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <p>No probes have been run yet.</p>
+          <p class="empty-hint">Discover endpoints first, then click "Run Probes" to test security.</p>
+        </div>
+        <div class="panel-list" id="probes-list" style="display:none;">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+      <!-- Report Panel -->
+      <div id="panel-report" class="tab-panel">
+        <div class="panel-empty" id="report-empty">
+          <div class="empty-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M8 4h10l6 6v18H8V4z" stroke="#475569" stroke-width="1.5"/>
+              <path d="M18 4v6h6" stroke="#475569" stroke-width="1.5"/>
+              <path d="M12 16h8M12 20h8M12 24h4" stroke="#475569" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p>No report generated yet.</p>
+          <p class="empty-hint">Run probes first, then generate a report.</p>
+        </div>
+        <div class="report-container" id="report-container" style="display:none;">
+          <div class="report-header">
+            <h3>Security Report</h3>
+            <div class="report-format-selector">
+              <select id="report-format">
+                <option value="markdown">Markdown</option>
+                <option value="html">HTML</option>
+                <option value="json">JSON</option>
+              </select>
+            </div>
+          </div>
+          <div class="report-preview" id="report-preview">
+            <!-- Report content preview -->
+          </div>
+          <div class="report-actions">
+            <button id="btn-download-report" class="btn btn-success btn-small">
+              Download Report
+            </button>
+            <button id="btn-copy-report" class="btn btn-ghost btn-small">
+              Copy to Clipboard
+            </button>
+            <button id="btn-export-raw" class="btn btn-ghost btn-small">
+              Export Raw JSON
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span id="footer-info">Ready</span>
+    <span class="footer-disclaimer">For authorized security testing only</span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

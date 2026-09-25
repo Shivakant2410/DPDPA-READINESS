@@ -1,0 +1,52 @@
+{
+  "name": "ai-endpoint-scanner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome extension that discovers AI chatbot endpoints, runs safe security probes, and generates professional reports",
+  "scripts": {
+    "lint": "eslint *.js",
+    "lint:fix": "eslint *.js --fix",
+    "validate": "node scripts/validate-manifest.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "node scripts/build.js",
+    "clean": "rm -rf dist/"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "@eslint/js": "^8.56.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "sinon-chrome": "^3.0.1",
+    "sinon": "^17.0.1",
+    "chrome-extension-manifest-schema": "^0.1.0",
+    "ajv": "^8.12.0",
+    "prettier": "^3.2.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.2.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "printWidth": 100
+  },
+  "keywords": [
+    "chrome-extension",
+    "security",
+    "ai",
+    "endpoint-scanner",
+    "chatbot"
+  ],
+  "license": "MIT"
+}

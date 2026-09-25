@@ -1,0 +1,832 @@
+https://www.checkdpdp.in/scan?url=https%3A%2F%2Ffreshworks.com%2F
+
+Skip to content
+229d
+01h
+39m
+52s
+to full DPDP compliance
+(13 May 2027)
+·
+Scan my website — free →
+Start here
+Scanner
+Tools
+CMPs
+DPDP Act
+News
+Pricing
+English
+Scan my website — free
+
+COOKIE BANNER NEEDS WORK
+
+Protect freshworks.com in under 10 minutes — free
+
+We didn’t see a DPDP-aligned consent banner on your site. Use our free banner builder — pick your colours, fonts and cookies; verify ownership; paste one <script> tag. It mounts in a shadow DOM so it can’t break your design. We handle marketing, analytics, functional and strictly-necessary cookies, all mapped to DPDP Act 2023 + Rules 2025. Free for small sites — no signup wall.
+
+Build my banner — free
+Or compare paid CMPs
+
+SCAN QUALITY
+
+Blocked scan
+
+The origin blocked our crawler (WAF / login wall / 5xx). The report covers only the public-facing surface.
+
+SITE TYPE
+
+WAF / bot-blocked
+
+Detected from the home page response. Pages scanned: 2.
+
+ANALYZER
+
+Heuristic narrative
+
+Findings generated from deterministic rules only — the LLM key pool was unavailable.
+
+SCANNED AT
+
+25 Sept 2026, 10:20 pm
+
+UTC timestamp the crawler captured the page.
+
+COMPLIANCE SCORE
+
+freshworks.com
+
+At Risk
+
+38
+/ 100
+AT RISK
+
+PASS
+
+5
+
+WARNING
+
+2
+
+FAIL
+
+6
+
+Scan was blocked by the origin (bot-blocked). Surface findings are limited — re-run with a headless browser or whitelist our scanner UA.
+
+Re-scan
+Download PDF
+Share report
+Email me PDF
+Scan another website
+
+Note on this site type. Origin served a WAF/CDN challenge. The score reflects only what we could see — true compliance may be higher or lower.
+
+PRIORITY ACTIONS
+
+Top fixes, ranked by impact
+
+Ordered by DPDP weight and severity. Effort estimates assume a developer familiar with the site.
+
+Request audit-grade review
+1
+Deploy a DPDP-compliant consent banner
+
+No banner means trackers run without consent — Section 6 violation.
+
+CRITICAL
+HALF DAY
+SECTION 6
+2
+Appoint and publish a Grievance Officer
+
+Section 8(10) requires a named officer, email, address and 30-day SLA.
+
+CRITICAL
+1 HOUR
+SECTION 8(10)
+3
+Publish all 6 data principal rights + intake
+
+Section 11 requires access, correction, erasure, withdraw, nominate, grievance — all listed with a working intake.
+
+CRITICAL
+HALF DAY
+SECTION 11
+4
+Make "Reject All" equal to "Accept All"
+
+Dark-pattern reject buttons are explicitly flagged under the Act.
+
+HIGH
+5 MINUTES
+SECTION 6
+5
+Add a footer "Cookie preferences" link
+
+Withdrawal must be as easy as consent — one click from any page.
+
+HIGH
+5 MINUTES
+SECTION 6(4)
+6
+Add a children's data clause
+
+Section 9 requires explicit treatment of users under 18.
+
+HIGH
+5 MINUTES
+SECTION 9
+7
+Itemise the privacy notice per Section 5
+
+Vague boilerplate fails — name actual data categories, purposes and retention periods.
+
+HIGH
+1–2 DAYS
+SECTION 5
+8
+Add a privacy policy link to every footer
+
+Section 5 requires the notice be reachable — a missing link fails.
+
+MEDIUM
+5 MINUTES
+SECTION 5
+Category breakdown
+
+Each check maps to a specific DPDP obligation, with the exact text we found on your site as evidence. Spot something wrong? Tell us.
+
+Consent banner
+
+Section 6 — DPDP Act 2023 · 0 / 15 points
+
+FAIL
+
+WHAT WE FOUND
+
+No consent banner detected in the rendered HTML on first load and no known CMP CDN is loaded. Under Rule 1, absence of evidence = evidence of absence.
+
+EVIDENCE FROM YOUR SITE
+
+No element with cookie/consent/gdpr markers found in the home page DOM and no CMP CDN in scripts.
+
+HOW TO FIX
+
+Deploy a DPDP-compliant CMP that shows a clear banner on first load with Accept All + Reject All at equal prominence and a granular categories view.
+
+WHAT GOOD LOOKS LIKE
+
+Banner appears within 1 second of first paint with no trackers fired yet
+Accept All and Reject All are both same-size primary buttons
+A "Manage preferences" link opens granular toggles for each tracker category
+Choice persists across pages and is revocable from a footer link
+
+SUGGESTED TOOLS TO FIX THIS
+
+CookieYes ↗
+
+Why this: India-headquartered, DPDP-aware CMP with a free tier
+
+Tsaaro Consent ↗
+
+Why this: India-built, DPDP-focused consent platform
+
+Report a mistake on this check ↗
+Reject equal to Accept
+
+Section 6 — DPDP Act 2023 (dark patterns) · 0 / 8 points
+
+FAIL
+
+WHAT WE FOUND
+
+No banner region found to evaluate. If the banner does not exist, there are no choices to be equal — automatic fail.
+
+EVIDENCE FROM YOUR SITE
+
+No buttons found inside banner region.
+
+HOW TO FIX
+
+Render "Reject All" as a primary button at the same visual weight as "Accept All". No links, no nested menus, no smaller font.
+
+WHAT GOOD LOOKS LIKE
+
+Accept All and Reject All side-by-side, same size, same colour weight
+A third "Customise" button for granular control
+No "X" close that defaults to accept
+Report a mistake on this check ↗
+Tracker gating
+
+Section 6 — DPDP Act 2023 · 10 / 10 points
+
+PASS
+
+WHAT WE FOUND
+
+No third-party tracker libraries detected in the home page.
+
+EVIDENCE FROM YOUR SITE
+
+No tracker domains in the home page HTML.
+
+HOW TO FIX
+
+Gate every non-essential tracker behind explicit consent. Easiest path: Consent Mode v2 default-denied + a CMP that flips state on accept.
+
+WHAT GOOD LOOKS LIKE
+
+No tracker network requests until the user clicks Accept
+After Reject, only first-party / essential requests fire
+Consent state is logged with timestamp for audit
+
+SUGGESTED TOOLS TO FIX THIS
+
+Google Consent Mode v2 ↗
+
+Why this: Native gating for GA/Ads tags
+
+Report a mistake on this check ↗
+Consent Mode v2
+
+Section 6 — DPDP Act 2023 · 10 / 10 points
+
+PASS
+
+WHAT WE FOUND
+
+No Google Analytics or GTM loader detected — Consent Mode v2 is not required.
+
+EVIDENCE FROM YOUR SITE
+
+No reference to google-analytics.com / googletagmanager.com in home page HTML.
+
+HOW TO FIX
+
+Add a gtag("consent","default",{...all denied except security_storage, region:["IN"]}) snippet with strategy="beforeInteractive" so it runs before the GTM loader.
+
+WHAT GOOD LOOKS LIKE
+
+All six consent fields (analytics_storage, ad_storage, ad_user_data, ad_personalization, functionality_storage, personalization_storage) default to "denied"
+security_storage stays "granted"
+region:["IN"] ensures the gate applies to Indian visitors
+CMP upgrades individual buckets to "granted" only after the user accepts
+
+SUGGESTED TOOLS TO FIX THIS
+
+Google Consent Mode v2 guide ↗
+
+Why this: Official setup reference
+
+Report a mistake on this check ↗
+Consent withdrawal
+
+Section 6(4) — DPDP Act 2023 · 0 / 7 points
+
+FAIL
+
+WHAT WE FOUND
+
+No withdrawal mechanism found. Section 6(4) requires withdrawal to be as easy as giving consent.
+
+EVIDENCE FROM YOUR SITE
+
+No withdrawal-related text found in footer or home page body.
+
+HOW TO FIX
+
+Add a persistent "Cookie preferences" or "Manage consent" link to the footer that reopens the CMP banner in one click.
+
+WHAT GOOD LOOKS LIKE
+
+Footer link visible on every page
+Single click reopens the consent banner with current state pre-populated
+Choice updates the consent log with timestamp and IP-hash
+
+SUGGESTED TOOLS TO FIX THIS
+
+CookieYes ↗
+
+Why this: Auto-injects a footer preferences link
+
+Report a mistake on this check ↗
+Privacy notice link
+
+Section 5 — DPDP Act 2023 · 1 / 3 points
+
+WARNING
+
+WHAT WE FOUND
+
+Privacy policy link resolves but is not in the footer — users may not find it.
+
+EVIDENCE FROM YOUR SITE
+
+Privacy URL: https://www.freshworks.com/privacy/
+
+HOW TO FIX
+
+Add a "Privacy Policy" link in the footer of every page that points to a single canonical privacy notice URL.
+
+WHAT GOOD LOOKS LIKE
+
+Footer link labelled "Privacy Policy" on every page
+Same URL across all pages
+No 404, no PDF — render as HTML for accessibility
+Report a mistake on this check ↗
+Privacy notice — Section 5 itemisation
+
+Section 5 — DPDP Act 2023 · 4 / 10 points
+
+WARNING
+
+WHAT WE FOUND
+
+3 of 7 Section 5 elements detected with specifics (vague boilerplate does not count).
+
+EVIDENCE FROM YOUR SITE
+
+Refreshing Cloud Business Suite | Privacy Notice Freshworks Inc English Contact Sales Login Skip to main content Products AI Platform Resources Pricing Start for free Get a demo Products AI Platform Resources Demo Pricin
+
+HOW TO FIX
+
+Rewrite the privacy notice to itemise actual data categories, named purposes, real retention periods and named third parties — not generic templates.
+
+WHAT GOOD LOOKS LIKE
+
+"We collect: name, email, phone, IP address, device ID, location" — not "personal information you provide"
+"Retention: 3 years from last login" — not "as long as necessary"
+"Shared with: Razorpay (payments), AWS (hosting), HubSpot (CRM)" — not "trusted partners"
+
+SUGGESTED TOOLS TO FIX THIS
+
+checkDPDP Privacy Notice Generator ↗
+
+Why this: Free DPDP-aligned generator
+
+Report a mistake on this check ↗
+Grievance Officer
+
+Section 8(10) — DPDP Act 2023 · 0 / 12 points
+
+FAIL
+
+WHAT WE FOUND
+
+No Grievance Officer found anywhere on the site after searching footer, privacy policy, grievance page and home page text. Per Rule 1, absence = failure.
+
+EVIDENCE FROM YOUR SITE
+
+No mention of "grievance officer" / "DPO" / "nodal officer" in any scanned page.
+
+HOW TO FIX
+
+Appoint and publish a named Grievance Officer with email, postal address and a stated 30-day response SLA. Link from the footer of every page.
+
+WHAT GOOD LOOKS LIKE
+
+Footer block: "Grievance Officer: Ms. Priya Sharma | grievance@yourco.in | 7th Floor, ... Bengaluru 560001 | Response within 30 days"
+Same details repeated in the privacy notice
+A dedicated /grievance-officer page with a redressal form
+Report a mistake on this check ↗
+Data principal rights
+
+Section 11 — DPDP Act 2023 · 0 / 10 points
+
+FAIL
+
+WHAT WE FOUND
+
+Only 0 of 6 rights mentioned. Section 11 requires all of: access, correction, erasure, withdraw consent, grievance, nominee.
+
+EVIDENCE FROM YOUR SITE
+
+Refreshing Cloud Business Suite | Privacy Notice Freshworks Inc English Contact Sales Login Skip to main content Products AI Platform Resources Pricing Start for free Get a demo Pr
+
+HOW TO FIX
+
+Create a /data-rights (or /your-rights) page listing all 6 rights with an intake form and a stated SLA.
+
+WHAT GOOD LOOKS LIKE
+
+"Your Rights" page covers: Access, Correct, Erase, Withdraw Consent, Nominate, Grievance
+A single form routes the right type to the right team
+Stated SLA: "We respond within 30 days"
+Identity verification step before fulfilment
+
+SUGGESTED TOOLS TO FIX THIS
+
+checkDPDP DSR intake form ↗
+
+Why this: Plain-English template for each right
+
+Report a mistake on this check ↗
+Form-level consent
+
+Section 6 — DPDP Act 2023 · 5 / 5 points
+
+PASS
+
+WHAT WE FOUND
+
+No PII-collecting forms found on scanned pages.
+
+EVIDENCE FROM YOUR SITE
+
+No <form> elements with PII fields detected.
+
+HOW TO FIX
+
+If you do collect PII through forms not on the home/privacy pages, ensure each has adjacent consent notice + privacy link.
+
+WHAT GOOD LOOKS LIKE
+
+Every form collecting name/email/phone/Aadhaar has inline consent text
+A privacy policy link is inside the form, not just the footer
+Report a mistake on this check ↗
+Security headers
+
+Section 8(5) — DPDP Act 2023 · 5 / 5 points
+
+PASS
+
+WHAT WE FOUND
+
+5 of 5 baseline security headers present.
+
+EVIDENCE FROM YOUR SITE
+
+HSTS: max-age=31536000; includeSubDomains | CSP: present | XCTO: nosniff
+
+HOW TO FIX
+
+Enable HSTS (max-age ≥ 6 months), a strict CSP, X-Content-Type-Options: nosniff, Referrer-Policy: strict-origin-when-cross-origin, and Permissions-Policy.
+
+WHAT GOOD LOOKS LIKE
+
+HTTPS with HSTS preload eligible
+CSP that locks down script-src to trusted origins
+Frame-busting + click-jacking protections
+
+SUGGESTED TOOLS TO FIX THIS
+
+securityheaders.com ↗
+
+Why this: Independent header grade
+
+Report a mistake on this check ↗
+Cross-border disclosure
+
+Section 16 — DPDP Act 2023 · 3 / 3 points
+
+PASS
+
+WHAT WE FOUND
+
+No foreign-infrastructure domains detected — no cross-border disclosure required.
+
+EVIDENCE FROM YOUR SITE
+
+No foreign domains in third-party script list.
+
+HOW TO FIX
+
+In the privacy notice, name each country or region where personal data is transferred (e.g. "We transfer data to the United States via AWS").
+
+WHAT GOOD LOOKS LIKE
+
+Each foreign sub-processor named with the country they operate from
+Lawful basis for transfer stated
+Reference to MeitY notification under Section 16 if applicable
+Report a mistake on this check ↗
+Children’s data policy
+
+Section 9 — DPDP Act 2023 · 0 / 2 points
+
+FAIL
+
+WHAT WE FOUND
+
+No mention of children's data handling in privacy notice. Section 9 violation.
+
+EVIDENCE FROM YOUR SITE
+
+cations 12. retention of personal data 13. links to third-party sites 14. google api disclosure 15. children&#x27;s personal data 16. amendments 17. effect of merger or acquisition 18. contacting fres
+
+HOW TO FIX
+
+Add a clear children's data clause to the privacy notice. If you do not target children, state so explicitly. If you may collect from minors, implement an age gate + parental consent flow.
+
+WHAT GOOD LOOKS LIKE
+
+"Our services are not directed at children under 18 and we do not knowingly collect their data."
+Or: age gate at signup + parental email verification step
+Report a mistake on this check ↗
+
+PAGES YOUR SITE IS MISSING
+
+Suggested pages to create
+
+DPDP obligations expect specific landing pages. These are the ones we couldn’t find on freshworks.com.
+
+/grievance-officer
+IMMEDIATE
+SECTION 8(10)
+
+No dedicated grievance page detected; Section 8(10) expects one.
+
+MINIMUM CONTENT
+
+Named officer
+Email
+Postal address
+30-day response SLA
+Grievance submission form
+
+Template: A simple page with the officer's name, email, postal address, response SLA and a grievance form.
+
+/data-rights
+IMMEDIATE
+SECTION 11
+
+No data rights intake page found; Section 11 requires a working mechanism.
+
+MINIMUM CONTENT
+
+List of 6 rights
+Single intake form routing by right type
+Identity verification step
+Stated SLA
+
+Template: A "Your Rights" page covering access/correction/erasure/withdraw/nominate/grievance with one intake form.
+
+/cookie-policy
+IMMEDIATE
+SECTION 6
+
+No cookie policy URL detected on the site.
+
+MINIMUM CONTENT
+
+List of cookies by category
+Purpose and retention per cookie
+How to withdraw consent
+
+Template: A cookie policy with each cookie name, vendor, purpose, expiry and category.
+
+/privacy
+IMMEDIATE
+SECTION 5
+
+No privacy policy reachable from the footer.
+
+MINIMUM CONTENT
+
+Section 5 itemisation
+Grievance officer block
+Data principal rights
+Cross-border disclosure
+
+Template: A Section 5-compliant privacy notice covering all 7 itemised elements.
+
+/children-policy
+THIS WEEK
+SECTION 9
+
+No mention of how children's data is handled.
+
+MINIMUM CONTENT
+
+Statement of whether service targets minors
+Age gate / parental consent flow if applicable
+
+Template: Either an exclusion clause inside privacy policy, or a dedicated page if you serve users under 18.
+
+TOOLS THAT FOLLOW DPDP RULES
+
+Top India-focused consent managers
+
+Packaged alternatives to our own free tools — Indian-built or India-aware, all designed around the DPDP Act 2023 and the 2025 Rules.
+
+See all ranked
+Securiti.ai
+SAN JOSE, US (INDIA PRACTICE)
+
+AI-driven data + privacy automation with a strong India practice.
+
+INDIA-FOCUSED
+
+BEST FOR
+
+Mid-to-large organisations with complex data estates and India operations.
+
+Sensitive data discovery + classification
+Consent, DSR and breach automation
+Explicit DPDP playbooks and India deployments
+Visit Securiti.ai
+Tsaaro
+BENGALURU
+
+India-built consent management bundled with qualified DPO advisory.
+
+DPDP-FIRST
+INDIAN-BUILT
+
+BEST FOR
+
+Indian organisations that want a CMP and a DPDP-trained DPO from one team.
+
+India-resident DPO advisory + CMP product
+DPIA, breach response and Section 8 audit-log tooling
+Built around the DPDP Act 2023 + Rules 2025 — not a retrofit
+Visit Tsaaro
+MyDataMyConsent
+BENGALURU
+
+DPDP-native consent platform with decentralised identity and Account Aggregator hooks.
+
+DPDP-FIRST
+INDIAN-BUILT
+
+BEST FOR
+
+Indian BFSI, fintech and healthtech that need verifiable, portable consent.
+
+Verifiable consent receipts (W3C VC)
+Account Aggregator + DigiLocker integrations
+DPDP Section 6 withdraw-as-easy-as-give flow
+Visit MyDataMyConsent
+Want help closing these gaps?
+
+Our free tools fix most warnings — privacy notice, cookie banner, rights handler. For audit-ready closure, request a free audit.
+
+See all tools
+Request a free audit
+Get the full checklist
+Privacy Policy
+·
+Grievance Officer
+·
+grievance@checkdpdp.in
+·
+Response within 30 days · Section 8(10)
+Cookie preferences
+·
+Withdraw consent
+FREE DPDP AUDIT · ADMIN DASHBOARD
+
+Send a query, get admin credentials by email — within 1 business day. All 10 DPDP categories. Free.
+
+Request my free audit →
+
+STAY UPDATED
+
+DPDP changes, in your inbox — only when there's real news.
+
+MeitY notifications, Data Protection Board orders, deadline reminders and new consent-manager guides. One-click unsubscribe, no marketing spam.
+
+Get notified when DPDP changes
+
+Government notifications, deadline reminders and new consent-manager guides — delivered when there's actually news. No marketing spam.
+
+Email *
+Name
+Organisation
+What should we notify you about?
+Government & MeitY notifications
+DPDP deadline reminders (13 May 2027)
+New consent-manager suggestions & comparisons
+checkDPDP product updates
+
+Data-collection notice
+
+Required under Section 5 of the DPDP Act 2023
+
+DPDP-COMPLIANT
+WHAT WE COLLECT
+Your name, email and (if provided) organisation.
+PURPOSE
+to send you the DPDP update emails you've selected and (occasionally) DPDP-related product news.
+RETENTION
+until you unsubscribe (or 24 months of inactivity)
+YOUR RIGHTS
+Access, correct, erase, nominate, withdraw — anytime.
+Read the full notice
+I consent to receiving the DPDP update emails I selected. I can unsubscribe at any time.
+Notify me about DPDP changes
+
+India's free DPDP compliance scanner and toolkit. Built so every website owner can understand the DPDP Act 2023 + Rules 2025 and meet the 13 May 2027 deadline.
+
+This is guidance, not legal advice. For specific compliance decisions, please consult a qualified lawyer.
+
+PRODUCT
+Free Scanner
+Free Audit + Admin Dashboard
+Ask an Expert
+Video Explainers
+Suraksha AI Chat
+Risk Calculator
+Penalty Calculator
+Prerequisites Checklist
+Gap Analysis Tool
+Free Banner Builder
+DPDP AI Assistant
+Apply for DPDP Certification
+All Tools
+CMP Comparison
+DPDP-Certified Websites (Live)
+checkDPDP vs Competitors
+LEARN
+DPDP News
+DPB Fines Tracker
+DPDP Act Guide
+DPDP for Startups (Founder Guide)
+Your Rights (Data Principal)
+Delete data from any website
+Find a Grievance Officer
+DPDP by Industry
+Cross-Border Transfers
+Compliance Checklist
+FAQ
+Blog
+COMPANY
+About
+Trust & Security
+Contact
+LEGAL
+Privacy Policy
+Terms
+Cookie Policy
+Manage your consent
+Refund Policy
+Disclaimer
+CHECKDPDP WEBSITE BADGES
+DPDP Gold
+85–100
+DPDP Verified
+70–84
+DPDP Aligned
+55–69
+See certified websites →
+·
+Verify your website — get certificate
+
+DPDP-CERTIFIED WEBSITES
+
+Indian websites already running with a checkDPDP-issued certificate
+
+See all certified websites →
+★ CHECKDPDP CERTIFIED ★
+DPDP ACT 2023 · RULES 2025
+DPDP ALIGNED
+ISSUED 2026
+phonepe.com
+★ CHECKDPDP CERTIFIED ★
+DPDP ACT 2023 · RULES 2025
+DPDP ALIGNED
+ISSUED 2026
+zomato.com
+★ CHECKDPDP CERTIFIED ★
+DPDP ACT 2023 · RULES 2025
+TRACKED
+ISSUED 2026
+zerodha.com
+★ CHECKDPDP CERTIFIED ★
+DPDP ACT 2023 · RULES 2025
+TRACKED
+ISSUED 2026
+paytm.com
+★ CHECKDPDP CERTIFIED ★
+DPDP ACT 2023 · RULES 2025
+TRACKED
+ISSUED 2026
+practo.com
+★ CHECKDPDP CERTIFIED ★
+DPDP ACT 2023 · RULES 2025
+TRACKED
+ISSUED 2026
+makemytrip.com
+
+© 2026 checkDPDP. Built in India.
+
+hello@checkdpdp.in
+·
+Grievance Officer:
+grievance@checkdpdp.in
+·
+Manage consent
+·
+Cookie preferences
+·
+English
+
+Cookies on checkDPDP
+
+We use essential cookies to run the site. With your consent we may also use analytics and preference cookies — never marketing without you opting in. Cookie preferences.
+
+Reject all
+Accept all
+Customise your choice →

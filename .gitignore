@@ -1,0 +1,8 @@
+node_modules/
+.env
+data/
+*.log
+scanner-service/benchmark/results/
+scanner-service/scan-*.json
+.DS_Store
+Thumbs.db

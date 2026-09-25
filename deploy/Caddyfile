@@ -1,0 +1,19 @@
+# HTTPS reverse proxy for HypenSec Astra. Caddy gets a Let's Encrypt certificate for ASTRA_DOMAIN.
+{$ASTRA_DOMAIN} {
+	encode gzip
+	# Scans take up to ~150 s; keep the connection open long enough.
+	reverse_proxy astra:8787 {
+		transport http {
+			read_timeout 200s
+			write_timeout 200s
+		}
+	}
+	# Large enough for PDF requests that carry screenshots.
+	request_body {
+		max_size 13MB
+	}
+	log {
+		output stdout
+		format console
+	}
+}

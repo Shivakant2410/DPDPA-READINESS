@@ -1,0 +1,31 @@
+# Sites for the false-positive benchmark, one per line. Replace or extend with your own targets.
+# Mix of Indian sectors: fintech, e-commerce, IT services, SaaS, edtech, health, travel, media.
+razorpay.com
+zerodha.com
+groww.in
+cred.club
+phonepe.com
+paytm.com
+policybazaar.com
+hdfcbank.com
+icicibank.com
+infosys.com
+tcs.com
+wipro.com
+freshworks.com
+zoho.com
+naukri.com
+makemytrip.com
+bookmyshow.com
+lenskart.com
+urbancompany.com
+practo.com
+1mg.com
+byjus.com
+unacademy.com
+myntra.com
+swiggy.com
+ndtv.com
+thehindu.com
+indiatoday.in
+esecforte.com
